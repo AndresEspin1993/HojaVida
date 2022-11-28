@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fotos con FancyBox</title>
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css"> 
+<script src="Jquery/jquery-1.6.3.min.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.js"></script>
+<script src="Jquery/jquery.easing.1.3.js"></script>
+
+<style>
+	#volver{
+		background-color: white;
+		color: black;
+
+		padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+			 border-radius: 30px;
+	}
+
+	#volver:hover{
+		background-color: black;
+		color: aliceblue;
+	}
+</style>
+
+<script>
+$(document).ready(function() {
+	$("#galeria a").fancybox({
+      overlayColor:"#797e79", //color
+	  overlayOpacity: .6, //opcaca la pagina al usar una imagen
+	  transitionIn:"elastic", //
+	  transitionOut:"elastic",//parecer y al irse efecto especial
+	  titlePosition:"Outside",
+	  cyclic:true, //mostrar imagenes en bucle
+	  speedIn:1000,//velocidad al salir la img
+	  speedOut:1000,//velocidad al entrar la img
+	});
+	
+	
+
+});
+</script>
+</head>
+<body>
+
+<div class="cabecera">
+<img src="imgs/pildoras_1.png">
+	<p class="logo">Formacion Academica </p>
+</div>
+
+
+<div class="contenido">
+	<div class="principal">
+		<h1>TITULOS</h1>
+		<div id="galeria">
+		<a href="imagenes/Captura de pantalla_20221127_184520.png" rel="gallery" title="INGENIERO DE SISTEMAS"><img src="imagenes/Captura de pantalla_20221127_184520.png" width="70" height="70" alt="Ingeniero De Sistemas"></a>
+		<a href="imagenes/Captura de pantalla_20221127_184620.png" rel="gallery" title="Vacas pasando la vida"><img src="imagenes/Captura de pantalla_20221127_184620.png" width="70" height="70" alt="vacas"></a>
+		<a href="imagenes/Captura de pantalla_20221127_184634.png" rel="gallery" title="Palemeras al atradecer"><img src="imagenes/Captura de pantalla_20221127_184634.png" width="70" height="70" alt="Palmeras"></a>
+		<a href="imagenes/Captura de pantalla_20221127_184648.png" rel="gallery" title="Montañas"><img src="imagenes/Captura de pantalla_20221127_184648.png" width="70" height="70" alt="Montañas"></a>
+		<a href="imagenes/Captura de pantalla_20221127_184711.png" rel="gallery" title="Pico costero"><img src="imagenes/Captura de pantalla_20221127_184711.png" width="70" height="70" alt="Pico"></a>
+		<a href="imagenes/Captura de pantalla_20221127_184729.png" rel="gallery" title="Atradecer"><img src="imagenes/Captura de pantalla_20221127_184729.png" width="70" height="70" alt="atardecer"></a></div>
+	</div>
+<br>
+	<a href="/index.html"><input type="button" value="Volver" id="volver">
+	</a></div>
+
+
+</body>
+</html>

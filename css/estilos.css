@@ -1,0 +1,48 @@
+.contenido2 {
+	
+	height: 35em;
+    width: 53em;
+    margin-right: 1px;
+    background-color: rgb(255, 255, 255);
+}
+.clear:after { 
+    contenido: "."; display: block; height: 0; clear: both; visibility: hidden; 
+    }
+    
+    * html .clear {
+        height: 1px;
+       }
+
+       p , li, legend , form{
+        font-size: 18px;
+        color: rgb(17, 17, 17);
+        font-family: 'ColaborateLightRegular', Arial, sans-serif;
+        line-height: 125%;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: rgba(19, 15, 15, 0.75);
+    }
+
+
+.principal2 {
+	xxposition: relative;
+	padding-bottom: 1em;
+	border-bottom: solid 1px rgba(255,255,255,.5);
+	xxoverflow:hidden;
+	xxmin-height: 300px;
+}
+
+
+#ache2 {
+	color: rgb(7, 7, 7);
+	margin-bottom: 5px;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+}
+.ache3 {
+	font-size: 18px;
+	color: rgb(19, 55, 77);
+	
+}

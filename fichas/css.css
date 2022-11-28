@@ -1,0 +1,86 @@
+*{
+    padding: 5px;
+    font-family: 'Pacifico', cursive;
+    background: rgb(218, 219, 216);
+    margin: 0px auto; 
+    text-align: center;
+    font-size: 15px;
+
+}
+/* header,nav,footer,section{
+
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+} */
+
+.tarjeta{
+    display: inline-block;
+    border: rgb(6, 83, 107) 10px solid;
+    margin: 5px;
+    width: 22%;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left:40px;
+    float: none;
+    
+    
+}
+
+
+
+.tarjeta:hover{
+    /* ponerlo mas grande */
+    border: rgb(10, 153, 236) 15px solid;
+    margin:5px;
+    font-size: 22px;
+    width: 30%;
+    cursor: pointer;
+}
+
+
+.tarjeta img{
+    width: 50%;
+    height: 50%;
+    border: rgb(49, 41, 41) 20px solid;
+       
+}
+
+.tarjeta h1{
+    font-size: 2.5em;
+
+}
+
+.tarjeta p{
+    font-size: 1em;
+
+}
+
+
+.tarjeta:hover{
+    /* ponerlo mas grande */
+    border: rgb(10, 153, 236) 15px solid;
+    margin:5px;
+    
+    width: 30%;
+    cursor: pointer;
+}
+
+ footer{
+
+    clear: both;
+    display: block;
+    border-top: 50px;
+    font-size: 1em;
+    width: 100px;
+    margin-top: 10px;
+} 
+
+article{
+    display: inline-block;
+    /* margin: 0 auto; */
+    width: 80%;
+    
+}
+

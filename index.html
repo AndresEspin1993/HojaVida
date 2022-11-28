@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portafolio</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/externa.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" 
+    rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="css/jquery-3.6.1.min.js"></script>
+
+    
+    <style>
+        #ver{
+            background-color: rgb(255, 255, 255);
+            color: rgb(22, 14, 29);
+            margin-left: 40%;
+            
+       
+
+        }
+       #ver:hover{
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+       }
+    </style>
+
+    <script>
+
+        $(document).ready(function() {
+        
+            $("#botones a").click(function(){
+                //rescata el href del objeto donde hacemos click
+                var url=$(this).prop("href");
+                // hace una peticion al servidor pide la pagina deportivas y lo cargara en el contenedor solo traemos en div noticia
+              $("#contenidosExternos").load(url + " #noticia2");
+              return false; /*inabilita comportamiento para que no haya conflicto*/
+        
+        
+            });
+        
+        
+                    
+        }); 
+        </script>
+</head>
+<body >
+    <div class="contenedor-principal">
+            <div class="informacion-general">
+                <div class="descripcion">
+            <h2 style="background-color: rgb(255, 255, 255);" class="animalo">PERFIL PROFESIONAL </h2><br>
+            <h1 class="animalo">Andres Espin</h1>
+            <p class="animalo">Como ingeniero cuento con la capacidad de reafirmar mi lugar de trabajo de
+                ser orientado, proponer y dar soluciones a las necesidades del sistema de
+                información y de interacción informática. Al ser técnico en sistemas poseo
+                conocimientos en pro de la tecnología y la información, poseo la capacidad
+                de orientar, corregir errores, persistente a solucionar las necesidades del
+                sistema para obtener los resultados deseados. <br><br>
+                Soy una persona autosuficiente y persistente, busco activamente
+                situaciones desafiantes para mejorar, aprender y desaprender, siendo
+                receptivo a la competencia para mejorar mis habilidades, mis principales
+                valores en la organización es mi determinación para alcanzar los objetivos.</p>
+                </div>
+
+                <div class="contenido2 animate__animated animate__fadeInLeft">
+                  <div class="principal"></div>
+                   
+                   
+               <ul id="botones">
+                <!-- <li name="lista"><a href="formacion.html">Formacion Academica</a>
+                      <li name="lista"><a href="datos.html">Datos Personales</a></li>
+                      <li name="lista"><a href="experiencia.html">Experiencia Laboral</a>
+                         <ul>
+                            <li><a href="#">Javascript</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                        </ul>    </li>
+                    <li name="lista"><a href="referencias.html">Referencias</a></li> 
+ 
+
+                </li> -->
+
+                   <a href="formacion.html"><input type="button" name="formacion" id="formacion" value="Formacion Academica"></a> 
+                   <a href="datos.html"><input type="button" name="datos" id="datospersonales" value="Datos Personales"></a> 
+                   <a href="experiencia.html"><input type="submit" name="experiencia" id="experiencia" value="Experiencia"></a> 
+                    <a href="referencias.html"><input type="button" name="referencias" id="referencias" value="Referencias"></a> 
+                
+                   </ul>
+                
+                <div id="contenidosExternos"> 
+                    <p style="width: 70%; text-align: justify; margin-left: 10%;margin-top: 120px;">
+                        Al darle click en los botones de arriba podras desplegar en este espacio,
+                        Informacion relevante que quieras conocer de mi.
+
+                        <br>
+                    </p>
+                </div>
+                </div>
+            
+            
+
+
+
+            <div>
+                <a href="Video52 fansy/Fotos con FancyBox.html">
+                <div class="cursos" >
+                    <h3 style="background-color: rgb(255, 255, 255);"> TITULOS </h3>
+
+                    <p>Dale click aqui!!!</p></a>
+                    
+                   
+                
+
+
+                
+                
+
+               
+
+
+
+
+                </div>
+
+                
+            </div>
+            </div>         
+            <aside class="informacion-lateral">
+                <img src="src/IMG_7982.JPG" alt="Mi presentacion" width="200" height="300" style="margin-left: 47px ;" class="foto"> 
+                <div class="contactos">
+                    <h3 class="titulo-contacts">Contacto</h3>
+                    <div>
+                        <span class="tipo-contacto">C.</span>
+                        <a  class="info-contacto" href="tel:3015674456">3015674456</a>
+                    </div>
+                    <div>                 
+                    
+                    <a class="info-contacto" href="malito:pepito@gmail.com">espin2014andres@gmail.com</a>
+                    </div>                  
+                </div>
+                <div class="habilidades-tecnicas">
+                    <h3 style="color: rgb(251, 250, 252);">Habilidades Tecnicas</h3>
+                    <ul class="lista-lateral">
+                        <li><pan class="elemento-lista-lateral">HTML</pan></li>
+                        <li><pan class="elemento-lista-lateral">CSS</pan></li>
+                        <li><pan class="elemento-lista-lateral">Javascript</pan></li>
+                        <li><pan class="elemento-lista-lateral">Bootstrap</pan></li>
+                        <li><pan class="elemento-lista-lateral">Jquery</pan></li>
+                        <li><pan class="elemento-lista-lateral">MYSQL</pan></li>
+                        
+                    </ul>
+                </div>
+                <div class="habilidades-blandas">
+                    <h3 style="color: rgb(245, 244, 250);">Habilidades Blandas</h3>
+                    <ul class="lista-lateral">
+                        <li><pan class="elemento-lista-lateral">Trabajo en equipo</pan></li>
+                        <li><pan class="elemento-lista-lateral">Comunicacion asertiva</pan></li>
+                        <li><pan class="elemento-lista-lateral">Resolucion de conflictos</pan></li>
+                        <li><pan class="elemento-lista-lateral">Adaptacion al cambio</pan></li>
+                        <li><pan class="elemento-lista-lateral">Responsabilidad</pan></li>
+                    
+                    </ul>
+               </div>
+            </aside>
+
+</div>
+
+
+    
+</body>
+</html>

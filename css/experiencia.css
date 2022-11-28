@@ -1,0 +1,15 @@
+*{
+    background-color: rgb(19, 59, 92);
+    color: aliceblue;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+.contenido2{
+    margin: 10px ;
+    padding: 50px;
+}
+a{
+    text-decoration: none;
+    text-align: justify;
+}
